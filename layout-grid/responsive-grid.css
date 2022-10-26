@@ -1,0 +1,270 @@
+
+/* =================================================
+common css
+==================================================== */
+
+/* set box sizing */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* coloumns equal width all devices */
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-col-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-col-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid-col-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid-col-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-col-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.grid-col-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.grid-col-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+
+/* =================================================
+media for specific width and devices
+==================================================== */
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  [class*="grid-"] {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .grid-col-sm-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-sm-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col-sm-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-sm-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-col-sm-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-col-sm-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-col-sm-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-sm-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .grid-col-sm-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .grid-col-sm-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .grid-col-sm-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid-col-md-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col-md-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-md-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-col-md-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-col-md-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-col-md-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-md-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .grid-col-md-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .grid-col-md-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .grid-col-md-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid-col-lg-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-lg-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col-lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-lg-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-col-lg-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-col-lg-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-col-lg-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-lg-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .grid-col-lg-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .grid-col-lg11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .grid-col-lg-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid-col-xl-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-xl-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-xl-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col-xl-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-xl-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-col-xl-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-col-xl-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-col-xl-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-xl-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .grid-col-xl-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .grid-col-xl-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .grid-col-xl-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Extra extra large devices (extra large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  .grid-col-xxl-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-xxl-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-xxl-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col-xxl-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-col-xxl-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-col-xxl-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-col-xxl-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-col-xxl-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid-col-xxl-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .grid-col-xxl-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .grid-col-xxl-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .grid-col-xxl-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* =========================================
+  end
+============================================ */
