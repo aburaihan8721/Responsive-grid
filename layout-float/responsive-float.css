@@ -7,16 +7,29 @@ common
   box-sizing: border-box;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
+
+.row{
+  margin-right: -10px;
+  margin-left: -10px;
 }
+
 
 .row::after {
   content: "";
   clear: both;
   display: block;
 }
+
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  /* background: rgb(224, 221, 221); */
+}
+
+
+
+
 
 /* columns equal width for all devices */
 .col-1 {

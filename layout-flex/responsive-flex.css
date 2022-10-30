@@ -10,10 +10,14 @@ common
 .row{
   display: flex;
   flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  
 }
 
 [class*="col-"] {
   padding: 10px;
+ 
 }
 
 /* coloumns equal width all devices */

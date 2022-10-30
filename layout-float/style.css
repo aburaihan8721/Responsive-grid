@@ -1,15 +1,21 @@
-.item{
-    height: 300px;
+html{
+    box-sizing: border-box;
 }
-.item-1{
-    background: rgb(126, 5, 5);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
-.item-2{
-    background: rgb(124, 24, 24);
+
+
+.container{
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 10px; */
 }
-.item-3{
-    background: rgb(82, 1, 1);
-}
-.item-4{
-    background: rgb(235, 223, 223);
+
+.content{
+    background: orange;
+    padding: 10px;
 }
